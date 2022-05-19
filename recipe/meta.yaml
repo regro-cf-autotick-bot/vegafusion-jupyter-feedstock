@@ -16,9 +16,9 @@ build:
 
 requirements:
   host:
-    - jupyter-packaging
     - pip
     - python >=3.7
+    - jupyter-packaging ==0.7.9
   run:
     - altair >=4.2.0
     - ipywidgets >=7.0.0
