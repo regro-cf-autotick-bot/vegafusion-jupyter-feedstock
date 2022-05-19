@@ -1,5 +1,5 @@
 {% set name = "vegafusion-jupyter" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 43876fc197b84fc90a88154ea0f6995a96cd781e9cb0f448da24be5911d76e41
+  sha256: 2fbd2da9bc1d0a192adda0141d0dbe065ce964a5cf3248863744b320aaa53abd
 
 build:
   noarch: python
@@ -16,9 +16,10 @@ build:
 
 requirements:
   host:
-    - jupyter-packaging
     - pip
     - python >=3.7
+    - jupyterlab ==3
+    - jupyter-packaging ==0.7.9
   run:
     - altair >=4.2.0
     - ipywidgets >=7.0.0
