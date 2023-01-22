@@ -1,5 +1,5 @@
 {% set name = "vegafusion-jupyter" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 95cc8842dee897c5dd7c55bcda8e3c2432827436511f507a40a0147e91fcf639
+  sha256: 66de1a99b54bcbc6dd7e8d9511e57e5a1ed2052b69e7a0fc906f26558810905f
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - altair >=4.2.0
     - ipywidgets >=7.0.0
     - python >=3.7
-    - vegafusion
+    - vegafusion >=1.0
 
 test:
   imports:
@@ -38,10 +38,10 @@ test:
 about:
   home: https://vegafusion.io
   summary: Altair Jupyter Widget library that relies on VegaFusion for server-side calculations
-  license: AGPL-3.0-or-later
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   doc_url: https://vegafusion.io
-  dev_url: https://github.com/vegafusion/vegafusion
+  dev_url: https://github.com/hex-inc/vegafusion
 
 extra:
   recipe-maintainers:
