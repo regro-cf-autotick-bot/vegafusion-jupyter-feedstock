@@ -1,11 +1,11 @@
-About vegafusion-jupyter
-========================
+About vegafusion-jupyter-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vegafusion-jupyter-feedstock/blob/main/LICENSE.txt)
 
 Home: https://vegafusion.io
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vegafusion-jupyter-feedstock/blob/main/LICENSE.txt)
 
 Summary: Altair Jupyter Widget library that relies on VegaFusion for server-side calculations
 
