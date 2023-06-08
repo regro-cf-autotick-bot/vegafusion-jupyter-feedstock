@@ -7,7 +7,7 @@ Home: https://vegafusion.io
 
 Package license: BSD-3-Clause
 
-Summary: Altair Jupyter Widget library that relies on VegaFusion for server-side calculations
+Summary: Altair Jupyter Widget library that uses VegaFusion for server-side calculations
 
 Development: https://github.com/hex-inc/vegafusion
 

@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://vegafusion.io
-  summary: Altair Jupyter Widget library that relies on VegaFusion for server-side calculations
+  summary: Altair Jupyter Widget library that uses VegaFusion for server-side calculations
   license: BSD-3-Clause
   license_file: LICENSE.txt
   doc_url: https://vegafusion.io
