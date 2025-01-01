@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: a19c7d5342cf867c2319c076e6109611cff9903dac6e70c1f7bc0e0108e82eb4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - jupyterlab ==3
     - jupyter-packaging ==0.7.9
   run:
     - altair >=4.2.0
     - ipywidgets >=7.0.0
-    - python >=3.7
+    - python >={{ python_min }}
     - vegafusion >=1.0
 
 test:
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://vegafusion.io
